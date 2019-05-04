@@ -1,0 +1,1413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Tela_principal</class>
+ <widget class="QMainWindow" name="Tela_principal">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>455</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>RECA</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icon.ico</normaloff>icon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="Joker">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>650</width>
+      <height>691</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>650</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="registro_chamados">
+     <attribute name="title">
+      <string>Registro de Chamados</string>
+     </attribute>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nome Logico:</string>
+      </property>
+      <property name="buddy">
+       <cstring>input_nomeLogico</cstring>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Data:</string>
+      </property>
+      <property name="buddy">
+       <cstring>input_data</cstring>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="check_critico">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>250</y>
+        <width>101</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Crítico</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="tristate">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonAtualizar">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>60</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Atualizar</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="input_atendente">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>50</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Mardonio</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Atendido por:</string>
+      </property>
+      <property name="buddy">
+       <cstring>input_atendente</cstring>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="input_nomeLogico">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>210</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+      <property name="placeholderText">
+       <string>DF7562ET000</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Chamado:</string>
+      </property>
+      <property name="buddy">
+       <cstring>input_chamado</cstring>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="input_problema_2">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>130</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+      <property name="placeholderText">
+       <string>SISAG</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonPesquisar">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>160</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Pesquisar</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Problema: </string>
+      </property>
+      <property name="buddy">
+       <cstring>input_problema_2</cstring>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="input_data">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>10</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Aqui_fica_data</string>
+      </property>
+      <property name="placeholderText">
+       <string>23/03/2018</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="input_chamado">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>90</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+      <property name="placeholderText">
+       <string>WO0000222222</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="check_vip">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>250</y>
+        <width>70</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>VIP</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonNovoChamado">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>10</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Novo Chamado</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Status:</string>
+      </property>
+      <property name="buddy">
+       <cstring>box_status</cstring>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonExcluir">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>110</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Excluir</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="box_status">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>170</y>
+        <width>151</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="currentText">
+       <string>CONCLUÍDO</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>CONCLUÍDO</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>GITEC</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CAIXA</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="buttonRelatorio_pessoal">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>210</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Relatório Diário</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonRegistrarChamado">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>280</y>
+        <width>241</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Registrar Chamado</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="input_id">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>10</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>10</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Id:</string>
+      </property>
+      <property name="buddy">
+       <cstring>input_id</cstring>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>320</y>
+        <width>421</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="rowCount">
+       <number>8</number>
+      </property>
+      <property name="columnCount">
+       <number>4</number>
+      </property>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <column>
+       <property name="text">
+        <string>Data</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Problema</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Chamado</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Status</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="conformidade">
+     <attribute name="title">
+      <string>Conformidade</string>
+     </attribute>
+     <widget class="QLineEdit" name="input_Usuario">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>160</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Fulano</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>120</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Matrícula:</string>
+      </property>
+      <property name="buddy">
+       <cstring>input_Matricula</cstring>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>280</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Servidor:</string>
+      </property>
+      <property name="buddy">
+       <cstring>input_Servidor</cstring>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>320</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Mensagem de Erro:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>160</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Usuário:</string>
+      </property>
+      <property name="buddy">
+       <cstring>input_Usuario</cstring>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="input_Matricula">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>120</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Cxxxxxx</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonEnviarEmail">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>470</y>
+        <width>241</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enviar Email</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>80</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Problema: </string>
+      </property>
+      <property name="buddy">
+       <cstring>input_problema</cstring>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="input_Unidade">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>240</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Agencia Planalto, 0002</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="input_problema">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>80</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>ERRO 32</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="input_Servidor">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>280</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>DF0002NT002</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>200</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Chamado:</string>
+      </property>
+      <property name="buddy">
+       <cstring>input_Chamado</cstring>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>240</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Unidade:</string>
+      </property>
+      <property name="buddy">
+       <cstring>input_Unidade</cstring>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="input_Chamado">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>200</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>WO00000055525</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="input_Mensagem_de_erro">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>350</y>
+        <width>241</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Erro invoking Method, failed.</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>60</y>
+        <width>20</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_2">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>60</y>
+        <width>20</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>520</y>
+        <width>321</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_4">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>50</y>
+        <width>321</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="joker">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>Joker</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>120</y>
+        <width>241</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>CMD</string>
+      </property>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Nome Lógico:</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonReiniciar">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>130</y>
+         <width>91</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Reiniciar Estacao</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelStatus">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>250</y>
+         <width>211</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>status...</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonSerialNumber">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>170</y>
+         <width>91</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Serial Number</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="inputUsuario">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>30</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhNone</set>
+       </property>
+       <property name="placeholderText">
+        <string>Axxxxx</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonCopiaSisag">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>130</y>
+         <width>91</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Copia SISAG EO</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="inputNomeLogico">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>90</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>DF7562ET000</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_19">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Usuário:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="inputSenha">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>60</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+       <property name="placeholderText">
+        <string>*******</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_20">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Senha:</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonMSTSC">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>170</y>
+         <width>91</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>MSTSC</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonProgramas">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>210</y>
+         <width>201</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Programas</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="putty_personalizado">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>Putty Personalizado</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>140</y>
+        <width>281</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Putty</string>
+      </property>
+      <widget class="QLineEdit" name="senhaPutty">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>30</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="nomeLogicoPutty">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>60</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonConectarEF">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>100</y>
+         <width>111</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Conectar EF</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonConectarEC">
+       <property name="geometry">
+        <rect>
+         <x>154</x>
+         <y>100</y>
+         <width>111</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Conectar EC</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Senha padrão:</string>
+       </property>
+       <property name="buddy">
+        <cstring>input_data</cstring>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Nome lógico:</string>
+       </property>
+       <property name="buddy">
+        <cstring>input_data</cstring>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>150</y>
+         <width>151</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>nome_logico</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="statusTip">
+    <string>Desenvolvido por: Mardonio S Costa - P772920</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>input_chamado</tabstop>
+  <tabstop>input_problema_2</tabstop>
+  <tabstop>box_status</tabstop>
+  <tabstop>input_nomeLogico</tabstop>
+  <tabstop>check_critico</tabstop>
+  <tabstop>check_vip</tabstop>
+  <tabstop>buttonRegistrarChamado</tabstop>
+  <tabstop>buttonNovoChamado</tabstop>
+  <tabstop>buttonAtualizar</tabstop>
+  <tabstop>buttonExcluir</tabstop>
+  <tabstop>buttonPesquisar</tabstop>
+  <tabstop>buttonRelatorio_pessoal</tabstop>
+  <tabstop>tableWidget</tabstop>
+  <tabstop>input_problema</tabstop>
+  <tabstop>input_Matricula</tabstop>
+  <tabstop>input_Usuario</tabstop>
+  <tabstop>input_Chamado</tabstop>
+  <tabstop>input_Unidade</tabstop>
+  <tabstop>input_Servidor</tabstop>
+  <tabstop>input_Mensagem_de_erro</tabstop>
+  <tabstop>buttonEnviarEmail</tabstop>
+  <tabstop>inputUsuario</tabstop>
+  <tabstop>inputSenha</tabstop>
+  <tabstop>inputNomeLogico</tabstop>
+  <tabstop>buttonReiniciar</tabstop>
+  <tabstop>buttonCopiaSisag</tabstop>
+  <tabstop>buttonMSTSC</tabstop>
+  <tabstop>buttonSerialNumber</tabstop>
+  <tabstop>senhaPutty</tabstop>
+  <tabstop>nomeLogicoPutty</tabstop>
+  <tabstop>buttonConectarEF</tabstop>
+  <tabstop>buttonConectarEC</tabstop>
+  <tabstop>Joker</tabstop>
+  <tabstop>input_atendente</tabstop>
+  <tabstop>input_data</tabstop>
+  <tabstop>input_id</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>nomeLogicoPutty</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>label_17</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>222</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>127</x>
+     <y>343</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonNovoChamado</sender>
+   <signal>clicked()</signal>
+   <receiver>input_chamado</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>350</x>
+     <y>44</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>251</x>
+     <y>130</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonNovoChamado</sender>
+   <signal>clicked()</signal>
+   <receiver>input_problema_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>376</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>255</x>
+     <y>160</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonNovoChamado</sender>
+   <signal>clicked()</signal>
+   <receiver>input_nomeLogico</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>398</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>244</x>
+     <y>242</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonNovoChamado</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>check_critico</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>335</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>29</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonNovoChamado</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>check_vip</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>420</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>143</x>
+     <y>285</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonConectarEF</sender>
+   <signal>clicked()</signal>
+   <receiver>label_17</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>172</x>
+     <y>273</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>201</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonConectarEC</sender>
+   <signal>clicked()</signal>
+   <receiver>label_17</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>280</x>
+     <y>275</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>149</x>
+     <y>346</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>inputNomeLogico</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>labelStatus</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>244</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>141</x>
+     <y>406</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
